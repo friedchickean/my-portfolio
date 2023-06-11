@@ -20,7 +20,7 @@ const ProjectTile: React.FC<TileProps> = ({ image, title, description, sourceCod
       <div className="flex-grow p-5 flex flex-col">
         <p className="text-slate-100 flex-grow">{description}</p>
         <div className="flex items-center justify-between mt-4">
-          <div className="flex gap-3 text-2xl text-sky-300">
+          <div className="flex gap-3 text-2xl text-slate-100">
             {languageIcons && languageIcons.map((Icon, index) => <span key={index}>{Icon}</span>)}
           </div>
           <a href={sourceCodeLink} target="_blank" rel="noopener noreferrer" className="text-slate-100 hover:underline px-4 py-3 border-2">

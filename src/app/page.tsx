@@ -72,7 +72,7 @@ export default function Home() {
           </div>
 
           {/* Icons */}
-          <div className='pt-20 text-4xl flex justify-center gap-14 lg:gap-20 lg:mb-44'>
+          <div className='pt-20 text-3xl flex justify-center gap-10 lg:text-4xl lg:gap-20 lg:mb-44'>
             <a href="https://github.com/friedchickean" data-tooltip-id="github" data-tooltip-content="friedchickean">
               <BsGithub />
             </a>

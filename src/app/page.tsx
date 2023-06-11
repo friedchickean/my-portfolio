@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { BsGithub, BsLinkedin, BsInstagram, BsTelephoneFill } from "react-icons/bs";
 import { FaHtml5, FaCss3, FaReact, FaJs} from "react-icons/fa"
 import { MdEmail } from "react-icons/md";
-import { SiCsharp, SiMongodb, SiReact, SiTailwindcss} from "react-icons/Si"
+import { SiCsharp, SiMongodb, SiReact, SiTailwindcss} from "react-icons/si"
 import React, {useState, useEffect } from 'react';
 import { Tooltip } from 'react-tooltip';
 import FadeInUp from './components/FadeInUp';

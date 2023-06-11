@@ -1,9 +1,9 @@
 "use client"
 import Image from 'next/image';
 import { BsGithub, BsLinkedin, BsInstagram, BsTelephoneFill } from "react-icons/bs";
-import { FaHtml5, FaCss3, FaReact, FaJs} from "react-icons/fa"
+import { FaHtml5, FaCss3, FaPhp, FaJs} from "react-icons/fa"
 import { MdEmail } from "react-icons/md";
-import { SiCsharp, SiMongodb, SiReact, SiTailwindcss} from "react-icons/si"
+import { SiCsharp, SiMongodb, SiReact, SiTailwindcss, SiCurl} from "react-icons/si"
 import React, {useState, useEffect } from 'react';
 import { Tooltip } from 'react-tooltip';
 import FadeInUp from './components/FadeInUp';
@@ -180,6 +180,13 @@ export default function Home() {
                   description="A top-down 2d adventure game set in a large university map written entirely in Java. Featuring an 8-bit design, smooth animations, and random item generation to provide a fun gameplay experience."
                   sourceCodeLink="https://github.com/friedchickean/CRAM-BEFORE-THE-EXAM"
                   languageIcons={[<SiMongodb key="mongodb" />, <SiReact key="react" />, <SiTailwindcss key="tailwind" />, <FaJs key="js"/>]}
+                />
+                <ProjectTile
+                  image="/images/squarej.png"
+                  title="Square J"
+                  description="An innovative online convenience store platform inspired by the renowned Circle K. Created with PHP and REST API, Square J delivers a user-friendly experience for both customers and staff, accompanied by a comprehensive backend system for inventory and staff management."
+                  sourceCodeLink="https://github.com/friedchickean/Square-J-Website"
+                  languageIcons={[<SiCurl key="curl" />, <FaPhp key="php" />, <FaCss3 key="css" />]}
                 />
               </div>
             </FadeInUp>

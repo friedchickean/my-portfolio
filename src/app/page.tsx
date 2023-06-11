@@ -37,7 +37,7 @@ export default function Home() {
         {/* Content Container */}
         <div className="p-16 lg:p-32">
           {/* Big About Me */}
-          <div className="flex lg:flex-row justify-between">
+          <div className="flex flex-col lg:flex-row justify-between">
             <div className='lg:w-2/3 text-slate-200'>
               <div className="text-5xl">
                 <FadeInUp duration={100}>
@@ -72,7 +72,7 @@ export default function Home() {
           </div>
 
           {/* Icons */}
-          <div className='pt-20 text-4xl flex justify-center gap-14 lg:gap-20'>
+          <div className='pt-20 text-4xl flex justify-center gap-14 lg:gap-20 lg:mb-44'>
             <a href="https://github.com/friedchickean" data-tooltip-id="github" data-tooltip-content="friedchickean">
               <BsGithub />
             </a>
@@ -153,36 +153,57 @@ export default function Home() {
 
           {/* Projects */}
           <div>
-            <h1 className=' text-5xl text-cyan-600 pt-10 lg:pt-0'>Projects</h1>
-            <hr className="w-32 mt-7 mb-5"/>
+            <FadeInUp duration={500}>
+              <h1 className=' text-5xl text-cyan-600 pt-10 lg:pt-0'>Projects</h1>
+              <hr className="w-32 mt-7 mb-5"/>
+            </FadeInUp>
             
-            <div className='lg:flex lg:gap-8 py-10'>
-            <ProjectTile
-              image="/images/Chefm8-Logo.png"
-              title="ChefM8"
-              description="A recipe tutorial application focused on providing the best user experience by following essential UI design principles."
-              sourceCodeLink="https://github.com/friedchickean/ChefM8-Recipe-App"
-              languageIcons={[<SiCsharp key="csharp" />, <FaHtml5 key="html" />, <FaCss3 key="css" />]}
-            />
-            <ProjectTile
-              image="/images/recenseo.png"
-              title="Recenseo"
-              description="A full stack course rater website with a beautiful UI and an extensive database design to store user information and hundreds of courses."
-              sourceCodeLink="https://github.com/friedchickean/Recenseo"
-              languageIcons={[<SiMongodb key="mongodb" />, <SiReact key="react" />, <SiTailwindcss key="tailwind" />, <FaJs key="js"/>]}
-            />
-
-            <ProjectTile
-              image="/images/cram.png"
-              title="Cram Before The Exam"
-              description="A top-down 2d adventure game set in a large university map written entirely in Java. Featuring an 8-bit design, smooth animations, and random item generation to provide a fun gameplay experience."
-              sourceCodeLink="https://github.com/friedchickean/CRAM-BEFORE-THE-EXAM"
-              languageIcons={[<SiMongodb key="mongodb" />, <SiReact key="react" />, <SiTailwindcss key="tailwind" />, <FaJs key="js"/>]}
-            />
-            </div>
+            <FadeInUp duration={500}>
+              <div className='lg:flex lg:gap-8 py-10'>
+                <ProjectTile
+                  image="/images/Chefm8-Logo.png"
+                  title="ChefM8"
+                  description="A recipe tutorial application focused on providing the best user experience by following essential UI design principles."
+                  sourceCodeLink="https://github.com/friedchickean/ChefM8-Recipe-App"
+                  languageIcons={[<SiCsharp key="csharp" />, <FaHtml5 key="html" />, <FaCss3 key="css" />]}
+                />
+                <ProjectTile
+                  image="/images/recenseo.png"
+                  title="Recenseo"
+                  description="A full stack course rater website with a beautiful UI and an extensive database design to store user information and hundreds of courses."
+                  sourceCodeLink="https://github.com/friedchickean/Recenseo"
+                  languageIcons={[<SiMongodb key="mongodb" />, <SiReact key="react" />, <SiTailwindcss key="tailwind" />, <FaJs key="js"/>]}
+                />
+                <ProjectTile
+                  image="/images/cram.png"
+                  title="Cram Before The Exam"
+                  description="A top-down 2d adventure game set in a large university map written entirely in Java. Featuring an 8-bit design, smooth animations, and random item generation to provide a fun gameplay experience."
+                  sourceCodeLink="https://github.com/friedchickean/CRAM-BEFORE-THE-EXAM"
+                  languageIcons={[<SiMongodb key="mongodb" />, <SiReact key="react" />, <SiTailwindcss key="tailwind" />, <FaJs key="js"/>]}
+                />
+              </div>
+            </FadeInUp>
           </div>
 
+          <hr className='my-20 w-2/5 ml-auto'></hr>
+          {/* Contact me */}
+          <div className='text-right'>
+            <FadeInUp duration={500}>
+              <h1 className='text-5xl text-cyan-600 pt-10 lg:pt-0'>Contact me</h1>
+              <hr className="w-32 mt-7 mb-5 ml-auto"/>
+            </FadeInUp>
+            <FadeInUp duration={500}>
+              <h2 className='mt-4 text-lg font-bold'>Phone</h2>
+              <h3><a href="tel:+14034378329">+1 (403) 437-8329</a></h3>
+              <h2 className='mt-4 text-lg font-bold'>E-mail</h2>
+              <h3><a href="mailto:arguelleskean@gmail.com">arguelleskean@gmail.com</a></h3>
+              <h2 className='mt-4 text-lg font-bold'>LinkedIn</h2>
+              <h3><a href="https://linkedin.com/in/kean-arguelles">Kean Arguelles</a></h3>
+            </FadeInUp>
+            
+          </div>
         </div>
+        
         
 
       </section>

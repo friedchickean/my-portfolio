@@ -28,7 +28,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row justify-between">
             <div className='lg:w-2/3 text-slate-200'>
               <div className="text-5xl">
-                <h1>Hi! I'm,</h1>
+                <h1>Hi! I&apos;m,</h1>
                 <h1 className="py-2 text-cyan-600">
                   Kean Arguelles
                 </h1>

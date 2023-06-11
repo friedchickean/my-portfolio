@@ -161,7 +161,7 @@ export default function Home() {
             <FadeInUp duration={500}>
               <div className='lg:flex lg:gap-8 py-10'>
                 <ProjectTile
-                  image="/images/Chefm8-Logo.png"
+                  image="/images/chefm8.png"
                   title="ChefM8"
                   description="A recipe tutorial application focused on providing the best user experience by following essential UI design principles."
                   sourceCodeLink="https://github.com/friedchickean/ChefM8-Recipe-App"

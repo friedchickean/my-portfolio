@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image';
 import { BsGithub, BsLinkedin, BsInstagram, BsTelephoneFill } from "react-icons/bs";
-import { FaHtml5, FaCss3, FaPhp, FaJs} from "react-icons/fa"
+import { FaHtml5, FaCss3, FaPhp, FaJs, FaJava} from "react-icons/fa"
 import { MdEmail } from "react-icons/md";
 import { SiCsharp, SiMongodb, SiReact, SiTailwindcss, SiCurl} from "react-icons/si"
 import React, {useState, useEffect } from 'react';
@@ -158,38 +158,36 @@ export default function Home() {
               <hr className="w-32 mt-7 mb-5"/>
             </FadeInUp>
             
-            <FadeInUp duration={500}>
-              <div className='lg:flex lg:gap-8 py-10'>
-                <ProjectTile
-                  image="/images/chefm8.png"
-                  title="ChefM8"
-                  description="A recipe tutorial application focused on providing the best user experience by following essential UI design principles."
-                  sourceCodeLink="https://github.com/friedchickean/ChefM8-Recipe-App"
-                  languageIcons={[<SiCsharp key="csharp" />, <FaHtml5 key="html" />, <FaCss3 key="css" />]}
-                />
-                <ProjectTile
-                  image="/images/recenseo.png"
-                  title="Recenseo"
-                  description="A full stack course rater website with a beautiful UI and an extensive database design to store user information and hundreds of courses."
-                  sourceCodeLink="https://github.com/friedchickean/Recenseo"
-                  languageIcons={[<SiMongodb key="mongodb" />, <SiReact key="react" />, <SiTailwindcss key="tailwind" />, <FaJs key="js"/>]}
-                />
-                <ProjectTile
-                  image="/images/cram.png"
-                  title="Cram Before The Exam"
-                  description="A top-down 2d adventure game set in a large university map written entirely in Java. Featuring an 8-bit design, smooth animations, and random item generation to provide a fun gameplay experience."
-                  sourceCodeLink="https://github.com/friedchickean/CRAM-BEFORE-THE-EXAM"
-                  languageIcons={[<SiMongodb key="mongodb" />, <SiReact key="react" />, <SiTailwindcss key="tailwind" />, <FaJs key="js"/>]}
-                />
-                <ProjectTile
-                  image="/images/squarej.png"
-                  title="Square J"
-                  description="An innovative online convenience store platform inspired by the renowned Circle K. Created with PHP and REST API, Square J delivers a user-friendly experience for both customers and staff, accompanied by a comprehensive backend system for inventory and staff management."
-                  sourceCodeLink="https://github.com/friedchickean/Square-J-Website"
-                  languageIcons={[<SiCurl key="curl" />, <FaPhp key="php" />, <FaCss3 key="css" />]}
-                />
-              </div>
-            </FadeInUp>
+            <div className='lg:flex lg:gap-8 py-10'>
+              <ProjectTile
+                image="/images/chefm8.png"
+                title="ChefM8"
+                description="A recipe tutorial application focused on providing the best user experience by following essential UI design principles."
+                sourceCodeLink="https://github.com/friedchickean/ChefM8-Recipe-App"
+                languageIcons={[<SiCsharp key="csharp" />, <FaHtml5 key="html" />, <FaCss3 key="css" />]}
+              />
+              <ProjectTile
+                image="/images/recenseo.png"
+                title="Recenseo"
+                description="A full stack course rater website with a beautiful UI and an extensive database design to store user information and hundreds of courses."
+                sourceCodeLink="https://github.com/friedchickean/Recenseo"
+                languageIcons={[<SiMongodb key="mongodb" />, <SiReact key="react" />, <SiTailwindcss key="tailwind" />, <FaJs key="js"/>]}
+              />
+              <ProjectTile
+                image="/images/cram.png"
+                title="Cram Before The Exam"
+                description="A top-down 2d adventure game set in a large university map written entirely in Java. Featuring an 8-bit design, smooth animations, and random item generation to provide a fun gameplay experience."
+                sourceCodeLink="https://github.com/friedchickean/CRAM-BEFORE-THE-EXAM"
+                languageIcons={[<FaJava key="java" />]}
+              />
+              <ProjectTile
+                image="/images/squarej.png"
+                title="Square J"
+                description="An innovative online convenience store platform inspired by the renowned Circle K. Created with PHP and REST API, Square J delivers a user-friendly experience for both customers and staff, accompanied by a comprehensive backend system for inventory and staff management."
+                sourceCodeLink="https://github.com/friedchickean/Square-J-Website"
+                languageIcons={[<SiCurl key="curl" />, <FaPhp key="php" />, <FaCss3 key="css" />]}
+              />
+            </div>
           </div>
 
           <hr className='my-20 w-2/5 ml-auto'></hr>

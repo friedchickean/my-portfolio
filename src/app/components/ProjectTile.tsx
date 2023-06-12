@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import { IconType } from 'react-icons';
+import FadeInUp from './FadeInUp';
 
 interface TileProps {
   image: string;

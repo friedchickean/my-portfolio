@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { BsGithub, BsLinkedin, BsInstagram, BsTelephoneFill } from "react-icons/bs";
 import { FaHtml5, FaCss3, FaPhp, FaJs, FaJava} from "react-icons/fa"
 import { MdEmail } from "react-icons/md";
-import { SiCsharp, SiMongodb, SiReact, SiTailwindcss, SiCurl} from "react-icons/si"
+import { SiCsharp, SiMongodb, SiReact, SiTailwindcss, SiCurl, SiCplusplus, SiPython} from "react-icons/si"
 import React, {useState, useEffect } from 'react';
 import { Tooltip } from 'react-tooltip';
 import FadeInUp from './components/FadeInUp';
@@ -186,6 +186,34 @@ export default function Home() {
                 description="An innovative online convenience store platform inspired by the renowned Circle K. Created with PHP and REST API, Square J delivers a user-friendly experience for both customers and staff, accompanied by a comprehensive backend system for inventory and staff management."
                 sourceCodeLink="https://github.com/friedchickean/Square-J-Website"
                 languageIcons={[<SiCurl key="curl" />, <FaPhp key="php" />, <FaCss3 key="css" />]}
+              />
+            </div>
+
+            <FadeInUp duration={500}>
+              <h2 className=' text-4xl text-cyan-600 pt-10 lg:pt-0'>Self Projects</h2>
+              <hr className="w-32 mt-7 mb-5"/>
+            </FadeInUp>
+            <div className='lg:flex lg:gap-8 py-10 lg:w-4/6 mx-auto'>
+              <ProjectTile
+                  image="/images/raytracing.png"
+                  title="Ray Tracing"
+                  description="A 3d C++ program that showcases a path ray-tracing processed real time in GPU shaders."
+                  sourceCodeLink="https://github.com/friedchickean/CPP-Ray-Tracing"
+                  languageIcons={[<SiCplusplus key="cpp" />]}
+              />
+              <ProjectTile
+                  image="/images/planets.gif"
+                  title="Planets"
+                  description="A 3d C++ program that features the 3 planets (Earth, Moon, Sun) with realistic orbits. The scene is illuminated with phong shaders, and has a movable camera created from scratch."
+                  sourceCodeLink="https://github.com/friedchickean/CPP-Camera-and-Texture-Mapping"
+                  languageIcons={[<SiCplusplus key="cpp" />]}
+              />
+              <ProjectTile
+                  image="/images/taffy.gif"
+                  title="Taffy Tangle"
+                  description="Inspired by the renowned video game Bejeweled, Taffy tangle is a gem matching video game created in python using the library pygame."
+                  sourceCodeLink="https://github.com/friedchickean/Taffy-Tangle"
+                  languageIcons={[<SiPython key="python" />]}
               />
             </div>
           </div>

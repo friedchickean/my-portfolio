@@ -12,8 +12,8 @@ interface TileProps {
 
 const ProjectTile: React.FC<TileProps> = ({ image, title, description, sourceCodeLink, languageIcons }) => {
   return (
-    <div className="shadow-md rounded-md bg-slate-700/20 mb-5 w-full flex flex-col">
-      <div className="bg-slate-600 rounded-t-md h-64 flex items-center justify-center">
+    <div className="shadow-md rounded-md bg-slate-700/20 mb-5 flex flex-col w-full">
+      <div className="bg-slate-800/30 rounded-t-md h-64 flex items-center justify-center border-b-2">
         <img src={image} alt={title} className="max-w-full max-h-full p-4" />
       </div>
       <h2 className="text-xl lg:text-2xl text-cyan-500 font-bold pt-4 pb-2 px-5">{title}</h2>

@@ -12,10 +12,10 @@ const Navbar: React.FunctionComponent<INavbarProps> = () => {
   return (
 
     <nav className="flex justify-around md:justify-between bg-slate-900/75">
-        <a href="/"><h1 className="hidden sm:block md:w-3/5 text-xl md:text-3xl font-semibold px-6 py-5">K<span className='italic'>A</span></h1></a>
+        <a href="/" className="hidden sm:block md:w-3/5 text-xl md:text-3xl font-semibold px-6 py-5">K<span className='italic'>A</span></a>
 
-        <div className="md:w-2/5 flex gap-2 md:gap-0 px-6 py-5 md:p-0 lg:text-lg">
-            <button className="w-full px-2 hover:border-t-2">
+        <div className="md:w-2/5 flex gap-4 md:gap-0 px-6 py-5 md:p-0 lg:text-lg">
+            <button className="w-full hover:border-t-2">
                 <Link activeClass="active" to="top" spy={true} smooth={true} offset={0} duration={500}>
                     About
                 </Link>

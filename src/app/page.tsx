@@ -8,6 +8,8 @@ import React, {useState, useEffect } from 'react';
 import { Tooltip } from 'react-tooltip';
 import FadeInUp from './components/FadeInUp';
 import ProjectTile from './components/ProjectTile';
+import Navbar from './components/Navbar';
+import { Link } from "react-scroll/modules"
 
 
 export default function Home() {
@@ -25,15 +27,19 @@ export default function Home() {
       <section className="min-h-screen">
 
         {/* Nav Bar */}
-        <nav className="py-7 px-7 md:px-10 md:px-18 flex justify-between bg-slate-900/75">
+        {/* <nav className="py-7 px-7 md:px-10 md:px-18 flex justify-between bg-slate-900/75">
           <h1 className="text-xl md:text-3xl font-semibold">K<span className='italic'>A</span></h1>
           <ul className="flex items-center">
             <li className="px-3"></li>
-            <li className="px-3"><a href="">LinkedIn</a></li>
-            <li className="px-3"><a href="">GitHub</a></li>
+            <li className="px-3"><a href="#top">About Me</a></li>
+            <li className="px-3"><a href="#education">Education</a></li>
+            <li className="px-3"><a href="#projects">Projects</a></li>
+            <li className="px-3"><a href="#contact">Contact Me</a></li>
           </ul>
-        </nav>
-        
+        </nav> */}
+
+        <Navbar />
+
         {/* Content Container */}
         <div className="p-16 lg:p-32">
           {/* Big About Me */}
@@ -95,7 +101,7 @@ export default function Home() {
           <Tooltip id="phone" place="bottom"/>
           <Tooltip id="ig" place="bottom"/>
 
-          <hr className='my-20 w-2/5 ml-auto'></hr>
+          <hr id="education" className='my-20 w-2/5 ml-auto'></hr>
           
           {/* Education */}
           <div className='pb-10 flex flex-col items-center lg:flex-row lg:items-start'>
@@ -149,7 +155,7 @@ export default function Home() {
             </div>
           </div>
           
-          <hr className='my-20 w-2/5'></hr>
+          <hr id="projects" className='my-20 w-2/5'></hr>
 
           {/* Projects */}
           <div>
@@ -218,7 +224,7 @@ export default function Home() {
             </div>
           </div>
 
-          <hr className='my-20 w-2/5 ml-auto'></hr>
+          <hr className='my-20 w-2/5 ml-auto' id="contact"></hr>
           {/* Contact me */}
           <div className='text-right'>
             <FadeInUp duration={500}>

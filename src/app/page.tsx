@@ -9,7 +9,7 @@ import { Tooltip } from 'react-tooltip';
 import FadeInUp from './components/FadeInUp';
 import ProjectTile from './components/ProjectTile';
 import Navbar from './components/Navbar';
-import { Link } from "react-scroll/modules"
+import { Analytics } from '@vercel/analytics/react';
 
 
 export default function Home() {
@@ -243,9 +243,8 @@ export default function Home() {
           </div>
         </div>
         
-        
-
       </section>
+      <Analytics />
     </main>
   )
 }

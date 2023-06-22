@@ -30,7 +30,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = () => {
             </div>
         )} */}
 
-        <div className={`hidden md:flex items-center md:w-3/5 text-xl md:text-3xl font-semibold h-full transition-width duration-500 ${isScrolled ? 'md:w-0' : 'md:w-3/5'}`}>
+        <div className={`hidden md:flex items-center text-xl md:text-3xl font-semibold h-full transition-width duration-500 ${isScrolled ? 'md:w-0' : 'md:w-3/5'}`}>
             <a href="/" className={`transition-opacity duration-200 ${isScrolled ? 'opacity-0' : 'opacity-100'}`}>K<span className='italic'>A</span></a>
         </div>
 

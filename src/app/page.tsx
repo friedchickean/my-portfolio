@@ -21,27 +21,17 @@ export default function Home() {
   }, []);
 
   return (
-    <main className='bg-gray-950'>
+    /*bg-gray-950 */
+    <main className=''> 
 
       {/* Section containing everything */}
       <section className="min-h-screen">
 
         {/* Nav Bar */}
-        {/* <nav className="py-7 px-7 md:px-10 md:px-18 flex justify-between bg-slate-900/75">
-          <h1 className="text-xl md:text-3xl font-semibold">K<span className='italic'>A</span></h1>
-          <ul className="flex items-center">
-            <li className="px-3"></li>
-            <li className="px-3"><a href="#top">About Me</a></li>
-            <li className="px-3"><a href="#education">Education</a></li>
-            <li className="px-3"><a href="#projects">Projects</a></li>
-            <li className="px-3"><a href="#contact">Contact Me</a></li>
-          </ul>
-        </nav> */}
-
         <Navbar />
 
         {/* Content Container */}
-        <div id="top" className="p-16 lg:p-32">
+        <div id="top" className="p-16 lg:px-32 lg:py-44">
           {/* Big About Me */}
           <div className="flex flex-col lg:flex-row justify-between">
             <div className='lg:w-2/3 text-slate-200'>
@@ -73,7 +63,7 @@ export default function Home() {
               alt="Image Description" 
               width={350} 
               height={350} 
-              className="m-auto object-cover aspect-square rounded-full shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] border-solid border-2 border-slate-700/50" />
+              className="m-auto object-cover aspect-square rounded-full shadow-[0_20px_50px_rgba(20,_112,_184,_0.7)] border-solid border-2 border-slate-800/80" />
             </div>
           </div>
 
@@ -101,17 +91,17 @@ export default function Home() {
           <Tooltip id="phone" place="bottom"/>
           <Tooltip id="ig" place="bottom"/>
 
-          <hr id="education" className='my-20 w-2/5 ml-auto'></hr>
+          <hr id="education" className='my-24 w-2/5 ml-auto'></hr>
           
           {/* Education */}
-          <div className='pb-10 flex flex-col items-center lg:flex-row lg:items-start'>
+          <div className='sm:pb-10 md:pb-20 md:pt-16 flex flex-col items-center lg:flex-row lg:items-start'>
             {/* Grad pic */}
             <div className='lg:w-2/5'>
               <FadeInUp duration={300}>
                 <Image src="/images/grad.png" alt="Image Description"
                 width={350}
                 height={600}
-                className="m-auto object-cover rounded-3xl shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] border-solid border-2 border-slate-700/50" />
+                className="m-auto object-cover rounded-3xl shadow-[0_20px_50px_rgba(20,_112,_184,_0.7)] border-solid border-2 border-slate-800/80" />
               </FadeInUp>
             </div>
             {/* Grad right */}

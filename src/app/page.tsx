@@ -189,7 +189,14 @@ export default function Home() {
               <h2 className=' text-4xl text-cyan-600 pt-10 lg:pt-0'>Self Projects</h2>
               <hr className="w-32 mt-7 mb-5"/>
             </FadeInUp>
-            <div className='lg:flex lg:gap-8 py-10 lg:w-4/6 mx-auto'>
+            <div className='lg:flex lg:gap-8 py-10'>
+              <ProjectTile
+                  image="/images/trivia.png"
+                  title="Trivia App"
+                  description="An online Trivia game powered by OpenTDB API. Created with React."
+                  sourceCodeLink="https://github.com/friedchickean/react-trivia-app"
+                  languageIcons={[<SiReact key="react" />]}
+              />
               <ProjectTile
                   image="/images/raytracing.png"
                   title="Ray Tracing"

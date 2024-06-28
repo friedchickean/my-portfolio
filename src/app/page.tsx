@@ -1,10 +1,10 @@
 "use client"
 import Image from 'next/image';
 import { BsGithub, BsLinkedin, BsInstagram, BsTelephoneFill } from "react-icons/bs";
-import { FaHtml5, FaCss3, FaPhp, FaJs, FaJava} from "react-icons/fa"
+import { FaHtml5, FaCss3, FaPhp, FaJs, FaJava, FaReact, FaGithub, FaDocker, FaPython, FaGitAlt } from "react-icons/fa"
 import { MdEmail } from "react-icons/md";
-import { SiCsharp, SiMongodb, SiReact, SiTailwindcss, SiCurl, SiCplusplus, SiPython} from "react-icons/si"
-import React, {useState, useEffect } from 'react';
+import { SiCsharp, SiMongodb, SiReact, SiMicrosoftazure, SiTailwindcss, SiCurl, SiCplusplus, SiPython, SiJavascript, SiExpress, SiPostman, SiVisualstudiocode, SiVercel, SiNginx, SiRstudio, SiAmazonaws } from "react-icons/si"
+import React, { useState, useEffect } from 'react';
 import { Tooltip } from 'react-tooltip';
 import FadeInUp from './components/FadeInUp';
 import ProjectTile from './components/ProjectTile';
@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     /*bg-gray-950 */
-    <main className=''> 
+    <main className=''>
 
       {/* Section containing everything */}
       <section className="min-h-screen">
@@ -46,24 +46,24 @@ export default function Home() {
                 </FadeInUp>
               </div>
               <h2 className='mt-2'>
-                Computer Science Graduate
+                Software Developer
               </h2>
-              <hr className="my-5 w-32"/>
+              <hr className="my-5 w-32" />
               <p className='lg:w-5/6 text-center lg:text-left'>
-              I am a passionate Computer Science graduate from the University of Calgary, specializing in Security and Software Development. 
-              I thrive in a collaborative and deadline-driven environments, consistently providing high-quality work. I am eager to 
-              apply my technical proficiency to create a positive impact within a dynamic team, bringing my skill set to drive innovation and solve complex problems.
-              
+                I am a passionate Computer Science graduate from the University of Calgary, with expertise in Security and Software Development.
+                With professional experience as a full-time software developer, I thrive in a collaborative and deadline-driven environments, consistently providing high-quality results.
+                I am always ready to use my skills and knowledge to deliver innovative software solutions.
+
 
               </p>
             </div>
             <div className='pt-14 lg:py-8 mx-auto lg:w-1/3 lg:mx-0 lg:ml-auto'>
-              <Image 
-              src="/images/mepic.jpg" 
-              alt="Image Description" 
-              width={350} 
-              height={350} 
-              className="m-auto object-cover aspect-square rounded-full shadow-[0_20px_50px_rgba(20,_112,_184,_0.7)] border-solid border-2 border-slate-800/80" />
+              <Image
+                src="/images/mepic.jpg"
+                alt="Image Description"
+                width={350}
+                height={350}
+                className="m-auto object-cover aspect-square rounded-full shadow-[0_20px_50px_rgba(20,_112,_184,_0.7)] border-solid border-2 border-slate-800/80" />
             </div>
           </div>
 
@@ -85,23 +85,23 @@ export default function Home() {
               <BsInstagram />
             </a>
           </div>
-          <Tooltip id="github" place="bottom"/>
-          <Tooltip id="linkedin" place="bottom"/>
-          <Tooltip id="mail" place="bottom"/>
-          <Tooltip id="phone" place="bottom"/>
-          <Tooltip id="ig" place="bottom"/>
+          <Tooltip id="github" place="bottom" />
+          <Tooltip id="linkedin" place="bottom" />
+          <Tooltip id="mail" place="bottom" />
+          <Tooltip id="phone" place="bottom" />
+          <Tooltip id="ig" place="bottom" />
 
           <hr id="education" className='my-24 w-2/5 ml-auto'></hr>
-          
+
           {/* Education */}
           <div className='sm:pb-10 md:pb-20 md:pt-16 flex flex-col items-center lg:flex-row lg:items-start'>
             {/* Grad pic */}
             <div className='lg:w-2/5'>
               <FadeInUp duration={300}>
                 <Image src="/images/grad.png" alt="Image Description"
-                width={350}
-                height={600}
-                className="m-auto object-cover rounded-3xl shadow-[0_20px_50px_rgba(20,_112,_184,_0.7)] border-solid border-2 border-slate-800/80" />
+                  width={350}
+                  height={600}
+                  className="m-auto object-cover rounded-3xl shadow-[0_20px_50px_rgba(20,_112,_184,_0.7)] border-solid border-2 border-slate-800/80" />
               </FadeInUp>
             </div>
             {/* Grad right */}
@@ -117,9 +117,9 @@ export default function Home() {
                   Bachelor of Science in Computer Science
                 </h2>
                 <p>
-                I am a proud graduate from the University of Calgary, where I pursued Computer Science with a strong focus on Security and Software Development. Throughout my journey, I dedicated myself to academic excellence and embraced my hunger for growth. I have attained an average GPA of 3.37, reflecting my hard-work throughout my time as a student.
+                  I am a proud graduate from the University of Calgary, where I pursued Computer Science with a strong focus on Security and Software Development. Throughout my journey, I dedicated myself to academic excellence and embraced my hunger for growth. I have attained an average GPA of 3.37, reflecting my hard-work throughout my time as a student.
                 </p>
-                <hr className="mt-5 md:mt-10 lg:mt-20 w-32"/>
+                <hr className="mt-5 md:mt-10 lg:mt-20 w-32" />
                 {/* mini flex col */}
                 <div className='flex pt-5 text-left py-4 lg:pt-16'>
                   {/* awards */}
@@ -141,19 +141,102 @@ export default function Home() {
                   </div>
                 </div>
               </FadeInUp>
-              
+
             </div>
           </div>
-          
-          <hr id="projects" className='my-20 w-2/5'></hr>
+
+          <hr id="experience" className='my-20 w-2/5'></hr>
+
+          {/* Experience */}
+          <div className='sm:pb-10 md:pb-20 md:pt-16 flex flex-col items-center lg:flex-row lg:items-start'>
+
+            {/* Experience Left */}
+            <div className='lg:w-3/5 lg:text-left lg:pl-20'>
+              <FadeInUp duration={100}>
+                <h1 className=' text-5xl text-cyan-600 pt-10 lg:pt-0'>Experience</h1>
+              </FadeInUp>
+              <FadeInUp duration={500}>
+                <h2>Software Developer</h2>
+              </FadeInUp>
+              <FadeInUp duration={500}>
+                <div className="flex gap-2 items-center pb-5 pt-5 lg:pt-10">
+                  <span className='text-gray-300 text-lg'>2024 - Present</span>
+                  —
+                  <h2 className='text-lg lg:text-xl text-cyan-500'>
+                    McCaig Institute for Bone and Joint Health
+                  </h2>
+                </div>
+                <div className="flex flex-col gap-2 px-2">
+                  <p className=''>
+                    As a full-time software developer at the McCaig Institute, I am responsible for developing and maintaining the various software in the Bone Imaging Lab. I work closely with the research team to implement new features and ensure the applications are up-to-date with the latest technologies.
+                  </p>
+                  <p className=''>
+                    My biggest focus is on the Normative webapp, a powerful tool that allows researchers to compare bone data accross different populations. I am responsible for a complete redesign of the application, implementing new features that helps with data analysis, and scaling the application to support more data models.
+                  </p>
+                </div>
+                <hr className="mt-5 md:mt-10 lg:mt-20 w-32" />
+                {/* mini flex col */}
+                <div className='flex pt-5 text-left py-4 lg:pt-16'>
+                  {/* Languages */}
+                  <div className='w-3/5 px-2'>
+                    <h3 className='pb-5 text-lg font-semibold'>Languages and Technologies</h3>
+                    <ul className='grid grid-cols-2'>
+                      <li><SiJavascript className="inline mr-2" /> JavaScript (ES6+)</li>
+                      <li><FaReact className="inline mr-2" /> ReactJs</li>
+                      <li><SiExpress className="inline mr-2" /> Express.js</li>
+                      <li><FaHtml5 className="inline mr-2" /> HTML</li>
+                      <li><SiTailwindcss className="inline mr-2" /> CSS (Tailwind)</li>
+                      <li><SiMongodb className="inline mr-2" /> MongoDB</li>
+                      <li><SiRstudio className="inline mr-2" /> R</li>
+                      <li><FaPython className="inline mr-2" /> Python</li>
+                      <li><FaGitAlt className="inline mr-2" /> Git</li>
+                    </ul>
+                  </div>
+                  {/* Dev Tools */}
+                  <div className='w-3/5 px-2'>
+                    <h3 className='pb-5 text-lg font-semibold'>Dev Tools</h3>
+                    <ul className='grid grid-cols-2'>
+                      <li><SiAmazonaws className="inline mr-2" /> AWS EC2 (backend)</li>
+                      <li><SiAmazonaws className="inline mr-2" /> AWS Route 53</li>
+                      <li><SiNginx className="inline mr-2" /> NGINX</li>
+                      <li><SiVercel className="inline mr-2" /> Vercel</li>
+                      <li><FaDocker className="inline mr-2" /> Docker</li>
+                      <li><FaGithub className="inline mr-2" /> GitHub</li>
+                      <li><SiPostman className="inline mr-2" /> Postman</li>
+                      <li><SiMicrosoftazure className="inline mr-2" /> CI/CD (Microsoft Azure)</li>
+                    </ul>
+                  </div>
+                </div>
+              </FadeInUp>
+
+            </div>
+
+            {/* Normative images */}
+            <div className='lg:w-2/5'>
+              <FadeInUp duration={300}>
+                <div className='flex flex-col shadow-[0_20px_50px_rgba(20,_112,_184,_0.7)] border-solid border-2 border-slate-800/80 rounded-lg gap-1 py-1'>
+                  <Image src="/images/normative-home.png" alt="normative-home"
+                    width={650}
+                    height={350}
+                    className="m-auto object-cover rounded-lg " />
+                  <Image src="/images/normative-report.png" alt="normative-report"
+                    width={650}
+                    height={350}
+                    className="m-auto object-cover rounded-lg " />
+                </div>
+              </FadeInUp>
+            </div>
+          </div>
+
+          <hr id="projects" className='my-24 w-2/5 ml-auto'></hr>
 
           {/* Projects */}
           <div>
             <FadeInUp duration={500}>
               <h1 className=' text-5xl text-cyan-600 pt-10 lg:pt-0'>Projects</h1>
-              <hr className="w-32 mt-7 mb-5"/>
+              <hr className="w-32 mt-7 mb-5" />
             </FadeInUp>
-            
+
             <div className='lg:flex lg:gap-8 py-10'>
               <ProjectTile
                 image="/images/chefm8.png"
@@ -167,7 +250,7 @@ export default function Home() {
                 title="Recenseo"
                 description="A full stack course rater website with a beautiful UI and an extensive database design to store user information and hundreds of courses."
                 sourceCodeLink="https://github.com/friedchickean/Recenseo"
-                languageIcons={[<SiMongodb key="mongodb" />, <SiReact key="react" />, <SiTailwindcss key="tailwind" />, <FaJs key="js"/>]}
+                languageIcons={[<SiMongodb key="mongodb" />, <SiReact key="react" />, <SiTailwindcss key="tailwind" />, <FaJs key="js" />]}
               />
               <ProjectTile
                 image="/images/cram.png"
@@ -185,38 +268,39 @@ export default function Home() {
               />
             </div>
 
-            <FadeInUp duration={500}>
+            {/* <FadeInUp duration={500}>
               <h2 className=' text-4xl text-cyan-600 pt-10 lg:pt-0'>Self Projects</h2>
-              <hr className="w-32 mt-7 mb-5"/>
-            </FadeInUp>
-            <div className='lg:flex lg:gap-8 py-10'>
+              <hr className="w-32 mt-7 mb-5" />
+            </FadeInUp> */}
+
+            <div className='lg:flex lg:gap-8 pb-8'>
               <ProjectTile
-                  image="/images/trivia.png"
-                  title="Trivia App"
-                  description="An online Trivia game powered by OpenTDB API. Created with React."
-                  sourceCodeLink="https://github.com/friedchickean/react-trivia-app"
-                  languageIcons={[<SiReact key="react" />]}
+                image="/images/trivia.png"
+                title="Trivia App"
+                description="An online Trivia game powered by OpenTDB API. Created with React."
+                sourceCodeLink="https://github.com/friedchickean/react-trivia-app"
+                languageIcons={[<SiReact key="react" />]}
               />
               <ProjectTile
-                  image="/images/raytracing.png"
-                  title="Ray Tracing"
-                  description="A 3d C++ program that showcases a path ray-tracing processed real time in GPU shaders."
-                  sourceCodeLink="https://github.com/friedchickean/CPP-Ray-Tracing"
-                  languageIcons={[<SiCplusplus key="cpp" />]}
+                image="/images/raytracing.png"
+                title="Ray Tracing"
+                description="A 3d C++ program that showcases a path ray-tracing processed real time in GPU shaders."
+                sourceCodeLink="https://github.com/friedchickean/CPP-Ray-Tracing"
+                languageIcons={[<SiCplusplus key="cpp" />]}
               />
               <ProjectTile
-                  image="/images/planets.gif"
-                  title="Planets"
-                  description="A 3d C++ program that features the 3 planets (Earth, Moon, Sun) with realistic orbits. The scene is illuminated with phong shaders, and has a movable camera created from scratch."
-                  sourceCodeLink="https://github.com/friedchickean/CPP-Camera-and-Texture-Mapping"
-                  languageIcons={[<SiCplusplus key="cpp" />]}
+                image="/images/planets.gif"
+                title="Planets"
+                description="A 3d C++ program that features the 3 planets (Earth, Moon, Sun) with realistic orbits. The scene is illuminated with phong shaders, and has a movable camera created from scratch."
+                sourceCodeLink="https://github.com/friedchickean/CPP-Camera-and-Texture-Mapping"
+                languageIcons={[<SiCplusplus key="cpp" />]}
               />
               <ProjectTile
-                  image="/images/taffy.gif"
-                  title="Taffy Tangle"
-                  description="Inspired by the renowned video game Bejeweled, Taffy tangle is a gem matching video game created in python using the library pygame."
-                  sourceCodeLink="https://github.com/friedchickean/Taffy-Tangle"
-                  languageIcons={[<SiPython key="python" />]}
+                image="/images/taffy.gif"
+                title="Taffy Tangle"
+                description="Inspired by the renowned video game Bejeweled, Taffy tangle is a gem matching video game created in python using the library pygame."
+                sourceCodeLink="https://github.com/friedchickean/Taffy-Tangle"
+                languageIcons={[<SiPython key="python" />]}
               />
             </div>
           </div>
@@ -226,7 +310,7 @@ export default function Home() {
           <div className='text-right'>
             <FadeInUp duration={500}>
               <h1 className='text-5xl text-cyan-600 pt-10 lg:pt-0'>Contact me</h1>
-              <hr className="w-32 mt-7 mb-5 ml-auto"/>
+              <hr className="w-32 mt-7 mb-5 ml-auto" />
             </FadeInUp>
             <FadeInUp duration={500}>
               <h2 className='mt-4 text-lg font-bold'>Phone</h2>
@@ -236,10 +320,10 @@ export default function Home() {
               <h2 className='mt-4 text-lg font-bold'>LinkedIn</h2>
               <h3><a href="https://linkedin.com/in/kean-arguelles">Kean Arguelles</a></h3>
             </FadeInUp>
-            
+
           </div>
         </div>
-        
+
       </section>
       <Analytics />
     </main>

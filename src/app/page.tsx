@@ -31,7 +31,7 @@ export default function Home() {
         <Navbar />
 
         {/* Content Container */}
-        <div id="top" className="p-16 lg:px-32 lg:py-44">
+        <div id="top" className="p-8 lg:px-32 lg:py-44">
           {/* Big About Me */}
           <div className="flex flex-col lg:flex-row justify-between">
             <div className='lg:w-2/3 text-slate-200'>
@@ -145,13 +145,13 @@ export default function Home() {
             </div>
           </div>
 
-          <hr id="experience" className='my-20 w-2/5'></hr>
+          <hr id="experience" className='mt-14 mb-20 w-2/5'></hr>
 
           {/* Experience */}
-          <div className='sm:pb-10 md:pb-20 md:pt-16 flex flex-col items-center lg:flex-row lg:items-start'>
+          <div className='flex flex-col gap-10 items-center'>
 
             {/* Experience Left */}
-            <div className='lg:w-3/5 lg:text-left lg:pl-20'>
+            <div className='w-full lg:text-left'>
               <FadeInUp duration={100}>
                 <h1 className=' text-5xl text-cyan-600 pt-10 lg:pt-0'>Experience</h1>
               </FadeInUp>
@@ -174,61 +174,66 @@ export default function Home() {
                     My biggest focus is on the Normative webapp, a powerful tool that allows researchers to compare bone data accross different populations. I am responsible for a complete redesign of the application, implementing new features that helps with data analysis, and scaling the application to support more data models.
                   </p>
                 </div>
-                <hr className="mt-5 md:mt-10 lg:mt-20 w-32" />
-                {/* mini flex col */}
-                <div className='flex pt-5 text-left py-4 lg:pt-16'>
-                  {/* Languages */}
-                  <div className='w-3/5 px-2'>
-                    <h3 className='pb-5 text-lg font-semibold'>Languages and Technologies</h3>
-                    <ul className='grid grid-cols-2'>
-                      <li><SiJavascript className="inline mr-2" /> JavaScript (ES6+)</li>
-                      <li><FaReact className="inline mr-2" /> ReactJs</li>
-                      <li><SiExpress className="inline mr-2" /> Express.js</li>
-                      <li><FaHtml5 className="inline mr-2" /> HTML</li>
-                      <li><SiTailwindcss className="inline mr-2" /> CSS (Tailwind)</li>
-                      <li><SiMongodb className="inline mr-2" /> MongoDB</li>
-                      <li><SiRstudio className="inline mr-2" /> R</li>
-                      <li><FaPython className="inline mr-2" /> Python</li>
-                      <li><FaGitAlt className="inline mr-2" /> Git</li>
-                    </ul>
-                  </div>
-                  {/* Dev Tools */}
-                  <div className='w-3/5 px-2'>
-                    <h3 className='pb-5 text-lg font-semibold'>Dev Tools</h3>
-                    <ul className='grid grid-cols-2'>
-                      <li><SiAmazonaws className="inline mr-2" /> AWS EC2 (backend)</li>
-                      <li><SiAmazonaws className="inline mr-2" /> AWS Route 53</li>
-                      <li><SiNginx className="inline mr-2" /> NGINX</li>
-                      <li><SiVercel className="inline mr-2" /> Vercel</li>
-                      <li><FaDocker className="inline mr-2" /> Docker</li>
-                      <li><FaGithub className="inline mr-2" /> GitHub</li>
-                      <li><SiPostman className="inline mr-2" /> Postman</li>
-                      <li><SiMicrosoftazure className="inline mr-2" /> CI/CD (Microsoft Azure)</li>
-                    </ul>
-                  </div>
-                </div>
+                <hr className="mt-5 md:mt-5 lg:mt-10 w-32" />
+
               </FadeInUp>
 
             </div>
-
             {/* Normative images */}
-            <div className='lg:w-2/5'>
-              <FadeInUp duration={300}>
-                <div className='flex flex-col shadow-[0_20px_50px_rgba(20,_112,_184,_0.7)] border-solid border-2 border-slate-800/80 rounded-lg gap-1 py-1'>
-                  <Image src="/images/normative-home.png" alt="normative-home"
-                    width={650}
-                    height={350}
-                    className="m-auto object-cover rounded-lg " />
-                  <Image src="/images/normative-report.png" alt="normative-report"
-                    width={650}
-                    height={350}
-                    className="m-auto object-cover rounded-lg " />
-                </div>
-              </FadeInUp>
+            <div className=''>
+              {/* <FadeInUp duration={300}> */}
+              <div className='flex flex-col shadow-[0_20px_50px_rgba(20,_112,_184,_0.7)] border-solid border-2 border-slate-800/80 rounded-lg gap-1 py-1'>
+                <Image src="/images/normative-home.png" alt="normative-home"
+                  width={750}
+                  height={450}
+                  className="m-auto object-cover rounded-lg " />
+                {/* <Image src="/images/normative-report.png" alt="normative-report"
+                        width={650}
+                        height={350}
+                        className="m-auto object-cover rounded-lg " /> */}
+              </div>
+              {/* </FadeInUp> */}
             </div>
+
+            {/* mini flex col */}
+            <div className='flex flex-col md:flex-row gap-5 md:gap-2 pt-5 text-left py-4 lg:pt-10 w-full'>
+              {/* Languages */}
+              <div className='w-full md:w-3/5 px-2'>
+                <h3 className='pb-5 text-lg font-semibold'>Languages and Technologies</h3>
+                <ul className='grid grid-cols-2 lg:grid-cols-3'>
+                  <li><SiJavascript className="inline mr-2" /> JavaScript (ES6+)</li>
+                  <li><FaReact className="inline mr-2" /> ReactJs</li>
+                  <li><SiExpress className="inline mr-2" /> Express.js</li>
+                  <li><FaHtml5 className="inline mr-2" /> HTML</li>
+                  <li><SiTailwindcss className="inline mr-2" /> CSS (Tailwind)</li>
+                  <li><SiMongodb className="inline mr-2" /> MongoDB</li>
+                  <li><SiRstudio className="inline mr-2" /> R</li>
+                  <li><FaPython className="inline mr-2" /> Python</li>
+                  <li><FaGitAlt className="inline mr-2" /> Git</li>
+                </ul>
+              </div>
+              {/* Dev Tools */}
+              <div className='w-full md:w-3/5 px-2'>
+                <h3 className='pb-5 text-lg font-semibold'>Dev Tools</h3>
+                <ul className='grid grid-cols-2 lg:grid-cols-3'>
+                  <li><SiAmazonaws className="inline mr-2" /> AWS EC2</li>
+                  <li><SiAmazonaws className="inline mr-2" /> AWS Route 53</li>
+                  <li><SiNginx className="inline mr-2" /> NGINX</li>
+                  <li><SiVercel className="inline mr-2" /> Vercel</li>
+                  <li><FaDocker className="inline mr-2" /> Docker</li>
+                  <li><FaGithub className="inline mr-2" /> GitHub</li>
+                  <li><SiPostman className="inline mr-2" /> Postman</li>
+                  <li><SiMicrosoftazure className="inline mr-2" /> Microsoft Azure</li>
+                </ul>
+              </div>
+            </div>
+
+
+
+
           </div>
 
-          <hr id="projects" className='my-24 w-2/5 ml-auto'></hr>
+          <hr id="projects" className='my-20 w-2/5 ml-auto'></hr>
 
           {/* Projects */}
           <div>

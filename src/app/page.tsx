@@ -31,7 +31,7 @@ export default function Home() {
         <Navbar />
 
         {/* Content Container */}
-        <div id="top" className="p-8 lg:px-32 lg:py-44">
+        <div id="top" className="px-8 pb-8 pt-20 lg:px-32 lg:py-44">
           {/* Big About Me */}
           <div className="flex flex-col lg:flex-row justify-between">
             <div className='lg:w-2/3 text-slate-200'>
